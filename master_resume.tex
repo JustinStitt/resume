@@ -1,0 +1,176 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 \hspace*{4pt}|\hspace*{4pt} #4}\fakeNewLine}
+
+\newcommand{\resumeHeadingSmall}[3]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{\hspace*{4pt} #3}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[6]{
+\runsubsection{#1}\hspace*{\fill}  
+\location{#3}
+\hspace*{3pt}
+\textbf{#4}
+\hspace*{\fill}
+\location{#5}
+\hspace*{3pt}
+\textbf{#6}
+% \runsubsection{#3}\hspace*{\fill}  
+% \runsubsection{#4} 
+\\
+\descript{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\runsubsection{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+\renewcommand{\arraystretch}{1.3}
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Justin Stitt}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{github.com/JustinStitt}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourEmail}{jstitt007@gmail.com}
+\newcommand{\yourPhone}{Orange County, CA}
+
+\begin{center}
+    \Huge\fontsize{36pt}{36pt} \scshape \latoBold{\yourName}   \\ \vspace{1pt}
+    \normalsize
+    \faEnvelope \hspace*{3pt}
+     \href{mailto:\yourEmail}{{\yourEmail}}
+     \hspace*{3pt} \hspace*{3pt}
+     \faGithub \hspace*{3pt}
+     {{\yourWebsite}}
+     \hspace*{3pt} \hspace*{3pt}
+     \faHome \hspace*{3pt}
+     {{\yourPhone}} 
+    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\sectionUnderline
+% \vspace{-10pt}
+% \noindent\textcolor[HTML]{2b2b2b}{\rule{\textwidth}{.7pt}}
+% \textcolor[HTML]{000000}{}
+% Put school first and degree second if your school is reputable
+\educationHeading{B.S. Computer Science}{California State University, Fullerton}{GPA:}
+{3.6}{Graduation Date:}{May 2023}
+
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\sectionUnderline
+
+\resumeHeadingSmall{Google}{SWE Intern}{May 2022 – Aug 2022}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint
+    \item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint
+\end{bullets}
+\sectionsep
+
+\resumeHeadingSmall{Google}{STEP Intern}{May 2021 – Aug 2021}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+\end{bullets}
+\sectionsep
+
+% \resumeHeading{NASA Kennedy Space Center (KSC)}{Software Engineer Intern}{Meritt Island, FL}{Jan 2021 – Apr 2021}
+\resumeHeadingSmall{California State University, Fullerton}{Supplemental Instructor}{Jan 2020 – Present}
+\begin{bullets}
+    \item Redesign outdated graphic engine in NE-XS division directly \textbf{impacting the launch of Artemis II in 2023}
+    \item Maintain high standards of \textbf{readability, versatility, and data generation} on firing room displays to prepare for rocket launches
+    \item Engineer real-time graphic engine using \textbf{open-sourced Java Swing and JavaFX libraries}
+    \item Present working display prototypes to highlight \textbf{enhancements in display functionality, readability, speed, and efficiency}
+\end{bullets}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Projects}
+\sectionUnderline
+
+\resumeHeadingSmall{Some Project}{kekw ikjkekw}{May 2022 – Aug 2022}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint
+    \item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint
+\end{bullets}
+\sectionsep
+
+\resumeHeadingSmall{Some Other Project}{lmao kekw}{May 2021 – Aug 2021}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+    \item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+\end{bullets}
+\sectionsep
+\sectionsep
+
+%--------------------------------------------------------------
+%     Leadership
+%--------------------------------------------------------------
+\section{Leadership}
+\sectionUnderline
+\resumeHeadingSmall{Association for Computing Machinery (ACM)}{Algo President}{Aug 2021 – Present}
+\begin{bullets}
+    \item Led the \textbf{largest computer science organization} on campus through weekly technical workshops consisting of over 75 students
+    \item Design and present engaging content focusing on \textbf{data structures, algorithms, and interview preparation}
+\end{bullets}
+
+\sectionsep
+
+\section{Skills}
+\sectionUnderline
+\resumeHeadingSmall{Association for Computing Machinery (ACM)}{Algo President}{Aug 2021 – Present}
+\begin{bullets}
+    \item Led the \textbf{largest computer science organization} on campus through weekly technical workshops consisting of over 75 students
+    \item Design and present engaging content focusing on \textbf{data structures, algorithms, and interview preparation}
+\end{bullets}
+
+
+% A more concise alternate 
+% \begin{skillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{skillList}
+\end{document}
