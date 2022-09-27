@@ -12,7 +12,7 @@
 \newcommand{\resumeHeadingSmall}[3]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{\hspace*{4pt} #3}\fakeNewLine}
 
 % Create education heading. Parameters: Name, degree, location, when
-\newcommand{\educationHeading}[6]{
+\newcommand{\educationHeading}[7]{
 \runsubsection{#1}\hspace*{\fill}  
 \location{#3}
 \hspace*{3pt}
@@ -24,7 +24,10 @@
 % \runsubsection{#3}\hspace*{\fill}  
 % \runsubsection{#4} 
 \\
-\descript{#2}\fakeNewLine}
+\descript{#2}
+\hspace*{\fill}
+\textbf{#7}
+}
 
 % Create project heading. Parameters: Name, link, Tech stack
 \newcommand{\projectHeading}[3]{\Project{#1}{#2}
@@ -75,9 +78,8 @@
 % \noindent\textcolor[HTML]{2b2b2b}{\rule{\textwidth}{.7pt}}
 % \textcolor[HTML]{000000}{}
 % Put school first and degree second if your school is reputable
-\educationHeading{B.S. Computer Science}{California State University, Fullerton}{GPA:}
-{3.6}{Graduation Date:}{May 2023}
-
+\educationHeading{B.S. Computer Science}{California State University, Fullerton}{}
+{}{Graduation Date:}{May 2023}{GPA: 3.6}
 \sectionsep
 
 %--------------------------------------------------------------
