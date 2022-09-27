@@ -7,9 +7,11 @@
 % Convenience command - make it easy to fill template
 
 % Create job position command. Parameters: company, position, location, when
-\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 \hspace*{4pt}|\hspace*{4pt} #4}\fakeNewLine}
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ |
+#2}\hfill\location{#3 \hspace*{4pt}|\hspace*{4pt} #4}\fakeNewLine}
 
-\newcommand{\resumeHeadingSmall}[3]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{\hspace*{4pt} #3}\fakeNewLine}
+\newcommand{\resumeHeadingSmall}[3]{\runsubsection{\uppercase{#1}}\descript{ |
+#2}\hfill\location{\hspace*{4pt} #3}\fakeNewLine}
 
 % Create education heading. Parameters: Name, degree, location, when
 \newcommand{\educationHeading}[7]{
@@ -49,9 +51,7 @@
 %     Profile
 %--------------------------------------------------------------
 \newcommand{\yourName}{Justin Stitt}
-% How you want it to show up on the resume
 \newcommand{\yourWebsite}{github.com/JustinStitt}
-% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
 \newcommand{\yourEmail}{jstitt007@gmail.com}
 \newcommand{\yourPhone}{Orange County, CA}
 
@@ -78,8 +78,8 @@
 % \noindent\textcolor[HTML]{2b2b2b}{\rule{\textwidth}{.7pt}}
 % \textcolor[HTML]{000000}{}
 % Put school first and degree second if your school is reputable
-\educationHeading{B.S. Computer Science}{California State University, Fullerton}{}
-{}{Graduation Date:}{May 2023}{GPA: 3.6}
+\educationHeading{B.S. Computer Science}{California State University,
+												Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
 \sectionsep
 
 %--------------------------------------------------------------
@@ -88,7 +88,8 @@
 \section{Work Experience}
 \sectionUnderline
 
-\resumeHeadingSmall{Google}{SWE Intern | Mountain View, CA}{May 2022 – Aug 2022}
+\resumeHeadingSmall{Google}{SWE Intern | Mountain View, CA}{May 2022 – Aug
+																																				2022}
 \begin{bullets}
 	\item Contribute patches to the Linux Kernel to further enable
 		Clang/LLVM build support while decoupling Google assets from
@@ -111,10 +112,11 @@
 \end{bullets}
 \sectionsep
 
-% \resumeHeading{NASA Kennedy Space Center (KSC)}{Software Engineer Intern}{Meritt Island, FL}{Jan 2021 – Apr 2021}
-\resumeHeadingSmall{California State University, Fullerton}{Supplemental Instructor}{Jan 2020 – Present}
+\resumeHeadingSmall{California State University, Fullerton}{Supplemental
+																							Instructor}{Jan 2020 – Present}
 \begin{bullets}
-	\item Communicate complex topics regarding \textbf{C++} and \textbf{data structures} to groups with varying levels of understanding
+	\item Communicate complex topics regarding \textbf{C++} and \textbf{data
+		structures} to groups with varying levels of understanding
 \end{bullets}
 \sectionsep
 
@@ -126,16 +128,20 @@
 
 \resumeHeadingSmall{Some Project}{kekw ikjkekw}{May 2022 – Aug 2022}
 \begin{bullets}
-	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
-	\item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-	molestiae quas vel sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments}
+		lorem ipsum
+	\item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+		mollitia, molestiae quas vel sint Lorem ipsum dolor sit amet consectetur
+		adipisicing elit. Maxime mollitia,
 \end{bullets}
 \sectionsep
 
 \resumeHeadingSmall{Some Other Project}{lmao kekw}{May 2021 – Aug 2021}
 \begin{bullets}
-	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
-	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments} lorem ipsum
+	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments}
+		lorem ipsum
+	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments}
+		lorem ipsum
 \end{bullets}
 \sectionsep
 
@@ -144,9 +150,11 @@
 %--------------------------------------------------------------
 \section{Leadership}
 \sectionUnderline
-\resumeHeadingSmall{Association for Computing Machinery (ACM)}{Artificial Intelligence President}{Aug 2022 – Present}
+\resumeHeadingSmall{Association for Computing Machinery (ACM)}{Artificial
+																		Intelligence President}{Aug 2022 – Present}
 \begin{bullets}
-	\item Lead workshops in \textbf{accessible Artificial Intelligence} with engaging and informative content
+	\item Lead workshops in \textbf{accessible Artificial Intelligence} with
+		engaging and informative content
 \end{bullets}
 
 \sectionsep
@@ -156,8 +164,11 @@
 %%%%%%%
 \section{Skills}
 \sectionUnderline{}
-% Python \textbullet{}   Julia \textbullet{} PHP \textbullet{} C/C++ \textbullet{} Web \textbullet{} JavaScript \textbullet{} SQL \textbullet{} Ruby \textbullet{} Go \textbullet{} Git \\
-% \textbullet{} TensorFlow \textbullet{} PyTorch \textbullet{} LLVM \textbullet{} Svelte \textbullet{} Java \textbullet{} Linux
+% Python \textbullet{}   Julia \textbullet{} PHP \textbullet{} C/C++
+% \textbullet{} Web \textbullet{} JavaScript \textbullet{} SQL \textbullet{}
+% Ruby \textbullet{} Go \textbullet{} Git \\
+% \textbullet{} TensorFlow \textbullet{} PyTorch \textbullet{} LLVM
+% \textbullet{} Svelte \textbullet{} Java \textbullet{} Linux
 % \sectionsep{}
 \begin{skillList}
 	\doubleItem{Languages:}{Python, C/C++, Julia, Ruby, Go, Javascript}%
