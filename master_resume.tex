@@ -44,6 +44,13 @@
 % Parameters: courses
 \newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
 
+\newcommand{\hackathon}[2]{
+#1
+\begin{itemize}[noitemsep, topsep=0pt, align=left, leftmargin=*]
+\item #2
+\end{itemize}
+}
+
 %--------------------------------------------------------------
 \begin{document}
 \renewcommand{\arraystretch}{1.3}
@@ -79,7 +86,7 @@
 % \textcolor[HTML]{000000}{}
 % Put school first and degree second if your school is reputable
 \educationHeading{B.S. Computer Science}{California State University,
-												Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
+Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
 \sectionsep
 
 %--------------------------------------------------------------
@@ -117,32 +124,69 @@
 \begin{bullets}
 	\item Communicate complex topics regarding \textbf{C++} and \textbf{data
 		structures} to groups with varying levels of understanding
+	\item Prepare engaging study sessions and materials in accordance with lecture
+	topics
 \end{bullets}
 \sectionsep
 
 %--------------------------------------------------------------
-%     Experience
+%     Projects
 %--------------------------------------------------------------
 \section{Projects}
 \sectionUnderline
+\resumeHeadingSmall{TuffyHacks 2021 \& 2022 Winner: Best Overall}{24 Hour
+Hackathon}{March 2021, March 2022}
 
-\resumeHeadingSmall{Some Project}{kekw ikjkekw}{May 2022 – Aug 2022}
-\begin{bullets}
-	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments}
-		lorem ipsum
-	\item Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-		mollitia, molestiae quas vel sint Lorem ipsum dolor sit amet consectetur
-		adipisicing elit. Maxime mollitia,
-\end{bullets}
-\sectionsep
+\hackathon{Conscious Camper (2021): A sustainability passion project completed
+in under 24 hours!}{Implement Google's Places API, OpenWeather API, and a
+machine learning model to evaluate potential campsites}
 
-\resumeHeadingSmall{Some Other Project}{lmao kekw}{May 2021 – Aug 2021}
-\begin{bullets}
-	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments}
-		lorem ipsum
-	\item Lorem ipsum dolor sit amet consectetur \textbf{A/B testing experiments}
-		lorem ipsum
-\end{bullets}
+\hackathon{Crypto Clicker (2022): An interactive experience demonstrating the
+strain that cryptocurrency has on our planet} {Procedurally generate decaying
+planet model due to the thinning atmosphere caused by Bitcoin mining.}
+
+\vspace{5pt}
+\resumeHeadingSmall{x3d Parser}{Parses XML-like files for use in Ray
+Tracing}{May 2020}
+\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
+	\item Generate mesh geometry data from Blender-exported .x3d files using
+	triangle vertices
+	\item Configure import/render workflow for newly-generated .mesh files into a
+	QT-enabled C++ Ray Tracer
+\end{itemize}
+
+\vspace{5pt}
+\resumeHeadingSmall{Social Distancing Sim}{A Simulation of How Social Distancing
+"Flattens the Curve"}{May 2020}
+\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
+	\item Design a physics-based simulation in Python that correlates collisions
+		to real-time infections. Simulation allows the modification of a “social
+		distancing ratio” that corresponds to the number of people staying at home.
+	\item My findings show that it takes just under 300 days for all subjects to
+		become infected with a 10\% social distancing ratio and around 1,000 days
+		with a 70\% social distancing ratio.
+\end{itemize}
+
+\vspace{5pt}
+\resumeHeadingSmall{Philosophy AI}{Generate New Never-Before-Seen philosophical
+Quotes}{Oct 2020}
+\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
+	\item Scrape XML and HTML web data using Python to build a philosophical
+		corpus.
+	\item Use a Markov chain to generate new philosophical quotes and post them
+		to Instagram overtop a nature-themed image.
+\end{itemize}
+
+
+\vspace{5pt}
+\resumeHeadingSmall{OpenAI Gym}{Develop Machine Learning Models to Compete in
+OpenAI's Gym Environment}{Oct 2020}
+\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
+	\item Study Deep Learning and develop competent ML models to play classic
+	Atari Games like Breakout and Lunar Lander \item Implement Convolutional
+	Neural Networks and Genetic Feed-Forward networks with TensorFlow, PyTorch and
+	Flux.jl
+\end{itemize}
 \sectionsep
 
 %--------------------------------------------------------------
@@ -151,11 +195,19 @@
 \section{Leadership}
 \sectionUnderline
 \resumeHeadingSmall{Association for Computing Machinery (ACM)}{Artificial
-																		Intelligence President}{Aug 2022 – Present}
-\begin{bullets}
-	\item Lead workshops in \textbf{accessible Artificial Intelligence} with
-		engaging and informative content
-\end{bullets}
+Intelligence President}{Aug 2022 – Present}
+
+\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
+	\item Lead workshops in \textbf{accessible Artificial Intelligence} alongside
+	engaging and informative content
+\end{itemize}
+
+\resumeHeadingSmall{International Collegiate Programming Contest (ICPC)}{Team
+Lead}{Feb 2022} \begin{itemize}[topsep=0pt, align=left, leftmargin=*,
+itemsep=-3pt]
+	\item Prepare and organize team notes and strategies for various complex
+	algorithms
+\end{itemize}
 
 \sectionsep
 
@@ -164,17 +216,11 @@
 %%%%%%%
 \section{Skills}
 \sectionUnderline{}
-% Python \textbullet{}   Julia \textbullet{} PHP \textbullet{} C/C++
-% \textbullet{} Web \textbullet{} JavaScript \textbullet{} SQL \textbullet{}
-% Ruby \textbullet{} Go \textbullet{} Git \\
-% \textbullet{} TensorFlow \textbullet{} PyTorch \textbullet{} LLVM
-% \textbullet{} Svelte \textbullet{} Java \textbullet{} Linux
-% \sectionsep{}
 \begin{skillList}
-	\doubleItem{Languages:}{Python, C/C++, Julia, Ruby, Java, Go, JavaScript}%
+	\doubleItem{Languages:}{Python, C/C++, Julia, Ruby, Java, Go, JavaScript, C\#}%
 	{Machine Learning:}{TensorFlow, PyTorch, OpenAI Gym}
 	\\
-	\doubleItem{Web Development:}{Svelte, React, Flask, Django}
-	{Technology:}{Git, Shell, CI/CD, AWS, \LaTeX}%
+	\doubleItem{Web Development:}{Svelte, React, Flask, Django, RubyOnRails}
+	{Technology:}{Git, Shell, CI/CD, AWS, \LaTeX, Googling}%
 \end{skillList}
 \end{document}
