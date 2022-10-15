@@ -7,8 +7,8 @@
 % Convenience command - make it easy to fill template
 
 % Create job position command. Parameters: company, position, location, when
-\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ |
-#2}\hfill\location{#3 \hspace*{4pt}|\hspace*{4pt} #4}\fakeNewLine}
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{
+|#2}\hfill\location{#3 \hspace*{4pt}|\hspace*{4pt} #4}\fakeNewLine}
 
 \newcommand{\resumeHeadingSmall}[3]{\runsubsection{\uppercase{#1}}\descript{ |
 #2}\hfill\location{\hspace*{4pt} #3}\fakeNewLine}
@@ -95,13 +95,12 @@ Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
 \section{Work Experience}
 \sectionUnderline
 
-\resumeHeadingSmall{Google}{SWE Intern | Mountain View, CA}{May 2022 – Aug
-																																				2022}
+\resumeHeadingSmall{Google}{SWE Intern | Mountain View, CA}{May 2022 – Aug 2022}
 \begin{bullets}
-	\item Contribute patches to the Linux Kernel to further enable
+	\item Contribute patches to the \textbf{Linux Kernel} to further enable
 		Clang/LLVM build support while decoupling Google assets from
 		GCC
-	\item Improve LLVM build times by 2.1\% through profiling and
+	\item \textbf{Improve LLVM build times by 2.1\%} through profiling and
 		optimization efforts ultimately reducing build costs for Google
 \end{bullets}
 \sectionsep
@@ -109,12 +108,14 @@ Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
 \resumeHeadingSmall{Google}{STEP Intern | Remote}{May 2021 – Aug 2021}
 \begin{bullets}
 	\item Perform analysis on internal data to determine its usefulness
-		within a binary classifier feature space using SQL and Python
+		within a \textbf{binary} \textbf{classifier} feature space using
+		\textbf{SQL} and
+		\textbf{Python}
 	\item Preprocess, slice, and organize data for use as input and
-		labeling features using Pandas and NumPy
+		labeling features using \textbf{Pandas} and \textbf{NumPy}
 	\item Improve advertiser experience and secure revenue for Google by
 		automating the appeals prediction process
-	\item Utilize TensorFlow to design, train, and evaluate a neural
+	\item Utilize \textbf{TensorFlow} to design, train, and evaluate a neural
 		network’s performance across various metrics
 \end{bullets}
 \sectionsep
@@ -123,7 +124,7 @@ Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
 																							Instructor}{Jan 2020 – Present}
 \begin{bullets}
 	\item Communicate complex topics regarding \textbf{C++} and \textbf{data
-		structures} to groups with varying levels of understanding
+		structures} to students with varying levels of understanding
 	\item Prepare engaging study sessions and materials in accordance with lecture
 	topics
 \end{bullets}
@@ -159,10 +160,13 @@ Tracing}{Apr 2022}
 \resumeHeadingSmall{Social Distancing Sim}{A Simulation of How Social Distancing
 "Flattens the Curve"}{May 2020}
 \begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Design a physics-based simulation in Python that correlates collisions
+	\item Design a physics-based simulation in \textbf{Python} that correlates
+	collisions
 		to real-time infections. Simulation allows the modification of a “social
-		distancing ratio” that corresponds to the number of people staying at home.
-	\item My findings show that it takes just under 300 days for all subjects to
+		distancing ratio” which corresponds to the percentage of people staying at
+		home.
+	\item My findings show that it takes just under 300 days for all
+	subjects to
 		become infected with a 10\% social distancing ratio and around 1,000 days
 		with a 70\% social distancing ratio.
 \end{itemize}
@@ -171,10 +175,10 @@ Tracing}{Apr 2022}
 \resumeHeadingSmall{Philosophy AI}{Generate New Never-Before-Seen philosophical
 Quotes}{Oct 2020}
 \begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Scrape XML and HTML web data using Python to build a philosophical
-		corpus.
-	\item Use a Markov chain to generate new philosophical quotes and post them
-		to Instagram overtop a nature-themed image.
+	\item Scrape \textbf{XML} and \textbf{HTML} web data using \textbf{Python} to
+	build a philosophical corpus.
+	\item Use a \textbf{Markov} \textbf{Chain} to generate new philosophical
+	quotes and post them to Instagram overtop a nature-themed image.
 \end{itemize}
 
 
@@ -182,10 +186,11 @@ Quotes}{Oct 2020}
 \resumeHeadingSmall{OpenAI Gym}{Develop Machine Learning Models to Compete in
 OpenAI's Gym Environment}{Oct 2020}
 \begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Study Deep Learning and develop competent ML models to play classic
-	Atari Games like Breakout and Lunar Lander \item Implement Convolutional
-	Neural Networks and Genetic Feed-Forward networks with TensorFlow, PyTorch and
-	Flux.jl
+	\item Study \textbf{Deep} \textbf{Learning} and develop competent ML models to
+	play classic Atari Games like Breakout and Lunar Lander
+	\item Implement Convolutional Neural Networks  and Genetic
+	Feed-Forward networks with \textbf{TensorFlow}, \textbf{PyTorch} and
+	\textbf{Flux.jl}
 \end{itemize}
 \sectionsep
 
